@@ -10,12 +10,57 @@
     --color-bg: #0d1b2a;
     --color-surface: #1b263b;
     --color-text: #e0e1dd;
-    --color-text-muted: #778da9;
-    --color-accent: #415a77;
+    --color-text-muted: #626db1;
+    --color-accent: #7aa4bf;
 }
 
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--color-surface);
+}
+
+.header__weather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__temp {
+    font-size: 2rem;
+}
+
+.header__desc {
+    color: var(--color-text-muted);
+}
+
+nav {
+    background-color: var(--color-surface);
+    padding: 40px;
+    border-top: 2px solid var(--color-text-muted);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav a {
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-text );
 }
