@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+    <header>
+        <div class="header__city">
+            <h1>Szczecin</h1>
+            <p>Aktualna data</p>
+        </div>
+
+        <div class="header__weather">
+            <strong class="header__temp">Temperatura</strong>
+            <p class="header__desc">Opis pogody</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#current">Teraz</a></li>
+            <li><a href="#forecast">Prognoza</a></li>
+            <li><a href="#details">Szczegóły</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="current">
+            <h2>Aktualna pogoda</h2>
+
+            <div class="current__weather">
+                <p class="current__temp">Aktualna temperatura</p>
+                <p class="current__desc">opis pogody</p>
+            </div>
+            <p class="current__noticeable">odczuwalna temperatura</p>
+        </section>
+
+        <section id="forecast">
+            <h2>Prognoza 7-dniowa</h2>
+
+            <div class="forecast__grid">
+                <div class="forecast__card">
+                    <p class="forecast__day">Poniedziałek</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Wtorek</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Środa</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Czwartek</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Piątek</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Sobota</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+                <div class="forecast__card">
+                    <p class="forecast__day">Niedziela</p>
+                    <p class="forecast__temp--high">temp max</p>
+                    <p class="forecast__temp--low">temp min</p>
+                    <p class="forecast__desc">opis pogody</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="details">
+            <h2>Szczegóły</h2>
+
+            <div class="details__grid">
+                <div class="details__card">
+                    <p class="details__label">Wiatr</p>
+                    <p class="details__value">wartość</p>
+                </div>
+                <div class="details__card">
+                    <p class="details__label">Wilgotność</p>
+                    <p class="details__value">wartość</p>
+                </div>
+                <div class="details__card">
+                    <p class="details__label">Ciśnienie</p>
+                    <p class="details__value">wartość</p>
+                </div>
+                <div class="details__card">
+                    <p class="details__label">Widoczność</p>
+                    <p class="details__value">wartość</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>stopka</p>
+    </footer>
 </body>
 </html>
